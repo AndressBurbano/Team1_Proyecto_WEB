@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    /* border-radius: 1em; */
+}
+body{
+    background-color: rgba(5, 15, 20,0.4);
+    font-family: sans-serif;
+    background-image:url(../img/Patagonia.jpeg);
+}
+nav{
+    background-color: rgba(5, 0, 0,0.4);
+    height: 45px;
+    line-height: 30px;
+    margin-top: 1em;
+    border-radius: 1em;
+ 
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    float: left; /* pone los elementos */
+    list-style: none;
+    margin: 10px; 
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    
+}
+
+.clearfix{
+    clear: both;
+}
+footer{
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    text-align: center;
+     }
+
+     

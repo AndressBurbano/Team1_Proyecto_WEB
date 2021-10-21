@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">}
+    <link rel="stylesheet" href="css/estiloglobal.css">
+    <link rel="stylesheet" href="css/estiloindex.css">
+    <title>Travel Web</title>
+</head>
+<body>
+    <header>
+       <h1>TRAVEL WEB</h1> <br/> 
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a> 
+            </li>
+            <li>
+                <a href="login.html">Login</a>
+            </li>
+            <li>
+                <a href="registro.html">Registro</a>
+            </li> 
+            <li>
+                <a href="perfil.html">Perfil</a>
+            </li> 
+            <li>
+                <a href="reserva.html">Reservar</a>
+            </li> 
+        </ul> 
+    </nav>
+    <section>
+        <fieldset>
+
+            <p> <form action="../archivo.php" target="_blank">
+                 <label> &nbsp;&nbsp; ¿Dónde?: <input type="text" name="lugar"> </label>  &nbsp;&nbsp; 
+                <label> &nbsp;&nbsp;Fecha de ingreso: <input type="date" name="fechIn" min="2021-09-19" max="2022-12-31">  </label> 
+                <label> &nbsp;&nbsp;Fecha de salida: <input type="date" name="fechOut" min="2021-09-19" max="2022-12-31">  </label>  
+                &nbsp;&nbsp;Selecciona categorías de tu interés: 
+                   <select multiple name="categorías[]">  <!--con control se selecciona varios-->
+                       <option value="precioxn"> Precio por noche </option>
+                       <option value="ubicacion"> Ubicación </option>
+                       <option value="puntuacion"> Puntuación </option>
+                       <option value="tipoHab"> Tipo de habitación </option>
+                       <option value="desayunoincl"> Desayuno incluido </option>
+                   </select> 
+                   <p><input type="submit" value="Buscar"> </p>
+            </p> </form> 
+        </fieldset>
+        <p> <br/><br/><br/><br/><br/><br/><br/></p>
+    </section>
+    <div class="clearfix"></div> 
+    <footer> 
+        <p>Esta página web esta en desarrollo por Team1</p>
+        <p> contáctenos: </br> 
+            <input type="image" src="img/logof.png" alt="Botón enviar" width="20" height="20" border="1">
+            <input type="image" src="img/logoI.jpg" alt="Botón enviar" width="20" height="20" border="1">
+            <input type="image" src="img/logoY.png" alt="Botón enviar" width="20" height="20" border="1"> 
+    
+           <p>Derechos reservados</p> 
+        </p>
+    </footer>
+    
+</body>
+</html>

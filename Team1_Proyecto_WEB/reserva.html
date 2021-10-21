@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloglobal.css">
+    <link rel="stylesheet" href="css/estiloreserva.css">
+    <title> Reserva </title>
+</head>
+ 
+<body>
+ 
+<header> 
+    
+</header>
+<fieldset>
+    <form action="../archivo.php" target="_blank">
+    <center>
+    <input type="image" src="img/reservations.jpg" alt="Botón enviar" width="180" height="115" border="1">
+   </center>
+    <p> <label> Nombre: <input type="text" name="nombre"> </label> </p>
+    <p> <label> Apellidos: <input type="text" name="apellidos"> </label> </p>
+    <p> <label> N° Documento: <input type="enum" name="cedula"> </label> </p>
+    <p> <label> Celular: <input type="enum" name="celular"> </label> </p>
+    <p> <label> Email: <input type="text" name="email"> </label> </p>
+    Medio de pago: <br/>  
+    <label> <input type="radio" name="tarjeta" value="debito"> Débito </label> <br/>
+    <label> <input type="radio" name="tarjeta" value="credito"> Crédito </label> <br/>
+    <p> <label> N° Tarjeta: <input type="enum" name="numtarj"> </label> <br/>
+        <label> CCV: <input type="enum" name="ccv"> </label> </p>
+    
+    <p> Fecha de vencimiento: <br/>
+        <label> Mes <input type="number" name="mes" min="1" max="12"> </label> <br/>
+        <label> Año <input type="number" name="año" min="2021"> </label></p>
+    <p> <label> Nombre del titular: <input type="text" name="nombre"> </label> </p>
+
+   <input type="submit" value="Enviar Información"> 
+   </form>
+    <p><a href="index.html"> &nbsp;Inicio </a> </p>
+
+</body>
+
+</html>

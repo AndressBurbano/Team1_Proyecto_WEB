@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloglobal.css">
+    <link rel="stylesheet" href="css/estiloregistro.css">
+    <script src="js/validarRegistro.js"></script>
+    <title> Registro </title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Registrarme</h1>
+    <main>
+        <center>
+            <input type="image" src="img/registroicono.webp" alt="registro.jpg" width="115" height="90" border="1">
+        </center>
+        <form action="" class="formulario" id="formulario" onsubmit="return validarRegistro();">
+            <!--Grupo de Identificacion -->
+            <div class="formulario_grupo" id="g_identificacion">
+                <label for="identificacion" class="formulario_label">Identificacion</label>
+                <div class="grupo_div_input">
+                    <input type="text" class="inputs" name="identificacion" id="identificacion" placeholder="111111111">
+                </div>
+                <p class="input_error"> La identificación solo puede contener numeros</p>
+            </div>
+
+            <!--Grupo de nombre-->
+            <div class="formulario_grupo" id="g_nombre">
+                <label for="nombre" class="formulario_label">nombre</label>
+                <div class="grupo_div_input">
+                    <input type="text" class="inputs" name="nombre" id="nombre" placeholder="Pepito">
+                </div>
+                <p class="input_error">El nombre de usuario debe ser de 1 a 15 caracteres que pueden ser letras, números o guines</p>
+            </div>
+
+            <!--Grupo de Apellido-->
+            <div class="formulario_grupo" id="g_apellido">
+                <label for="apellido" class="formulario_label">Apellido</label>
+                <div class="grupo_div_input">
+                    <input type="text" class="inputs" name="apellido" id="apellido" placeholder="Perez">
+                </div>
+                <p class="input_error">El Apellido de usuario debe ser de 1 a 15 caracteres que pueden ser letras,
+                    números o guines</p>
+            </div>
+
+            <!--Grupo de telefono-->
+            <!--             <div class="formulario_grupo" id="g_telefono">
+                <label for="telefono" class="formulario_label">Telefono</label>
+                <div class="grupo_div_input">
+                    <input type="text" class="inputs" name="telefono" id="telefono" placeholder="3154442211">
+                </div>
+                <p class="input_error">El Apellido de usuario debe ser de 1 a 15 caracteres que pueden ser letras, números o guines</p>
+            </div> -->
+
+            <!--Grupo de email-->
+            <div class="formulario_grupo" id="g_email">
+                <label for="email" class="formulario_label">email</label>
+                <div class="grupo_div_input">
+                    <input type="email" class="inputs" name="email" id="email" placeholder="ejemplo@email.com">
+                </div>
+                <p class="input_error">El email solo puede contener letras, numeros, puntos, guiones o guion bajo.</p>
+            </div>
+
+            <!--Grupo de Password 1-->
+            <div class="formulario_grupo" id="password">
+                <label for="password1" class="formulario_label">Contraseña</label>
+                <div class="grupo_div_input">
+                    <input type="password" class="inputs" name="password" id="password">
+                </div>
+                <p class="input_error">La contrasena debe ser de almenos 6 caracteres.</p>
+            </div>
+
+            <!--Grupo de Password 2-->
+            <div class="formulario_grupo" id="password2">
+                <label for="password2" class="formulario_label">Repita la contrasena</label>
+                <div class="grupo_div_input">
+                    <input type="password" class="inputs" name="password2" id="password2">
+                </div>
+                <p class="input_error">Las contrasenas deben ser iguales.</p>
+            </div>
+
+            <!-- Grupo: Terminos y Condiciones -->
+            <div class="terminos" id="g_terminos">
+                <label class="formulario_label">
+                    <input class="checkbox" type="checkbox" name="tyc" id="tyc" required>
+                    Acepto los Terminos y Condiciones
+                </label>
+            </div>
+
+            <div class="mensajeError" id="mensajeError">
+                <p> <b> Error:</b> Por favor rellene el formulario</p>
+            </div>
+
+            <!--Boton-->
+            <div class="btn_registrarme">
+                <button type="submit" class="btn">Registrarme</button>
+                <p class="mensajeRegistroExitoso" id="mensajeRegistroExitoso">Proceso de registro exitoso</p>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+
+</html>

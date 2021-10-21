@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/estiloglobal.css"> -->
+    <link rel="stylesheet" href="login.component.css">
+    <script src="js/validarLogin.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="home()">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="d-flex justify-content-center align-items-center h-100 " [formGroup]="form">
+        <div class="card col-4 p-5">
+            <div>
+                <p class="fs-2 fw-bold text-center">Iniciar sesión</p>
+            </div>
+            <div class="mb-4">
+                <label for="email" class="fw-bold">Correo: </label>
+                <input type="text" name="email" class="form-control" id="email" placeholder="pepito@gmail.com" formControlName="correo">
+            </div>
+            <div class="mb-4">
+                <label for="doc" class="fw-bold">Contraseña: </label>
+                <input type="password" name="password" class="form-control" id="password" placeholder="*********" formControlName="clave">
+            </div>
+            <div class="text-center">
+                <button class="btn btn-primary" (click)="login()">Ingresar</button>
+                <button class="btn btn-primary" (click)="signup()">Registrarme</button>
+            </div>            
+        </div>
+    </div>
+    <footer> 
+        <p>Esta página web esta en desarrollo por Team1</p>
+        <form>
+            <p>Derechos reservados</p> 
+        </form>
+    </footer>
+</body>
+</html>

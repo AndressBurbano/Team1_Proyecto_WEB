@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estiloglobal.css">
+    <link rel="stylesheet" href="css/estilologin.css">
+    <script src="js/validarLogin.js"></script>
+    <title>Login</title>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Inicio</a>
+            </li>
+        </ul>
+    </nav>
+    <section>
+    <form action="" onsubmit="return validarLogin();">
+        <h2>Inicio de Sesión</h2>
+        <label for="email" class="labels">Correo</label>
+            <input type="email" class="inputs" name="correo" id="correo" placeholder="ejemplo@email.com">
+        <label for="email" class="labels">Contraseña</label>
+            <input type="password" class="inputs" name="clave" id="clave" >
+
+        <input type="submit" class="boton inputs" value="Iniciar Sesión">
+        <div><br>
+            <a href="">Olvide mi contraseña</a><br>
+            <a href="registro.html"> Crear una cuenta</a>
+        </div>
+      
+    </form>
+</section>
+
+    <footer> 
+        <p>Esta página web esta en desarrollo por Team1</p>
+        <p> contáctenos: </br> 
+            <input type="image" src="img/logof.png" alt="Botón enviar" width="20" height="20" border="1">
+            <input type="image" src="img/logoI.jpg" alt="Botón enviar" width="20" height="20" border="1">
+            <input type="image" src="img/logoY.png" alt="Botón enviar" width="20" height="20" border="1"> 
+    
+           <p>Derechos reservados</p> 
+        </p>
+    </footer>
+</body>
+</html>

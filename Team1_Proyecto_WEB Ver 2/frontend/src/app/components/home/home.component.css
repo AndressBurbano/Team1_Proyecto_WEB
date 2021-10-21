@@ -1,0 +1,72 @@
+*{
+     box-sizing: border-box;
+    /* border-radius: 1em; */
+}
+body{
+    background-color: rgba(5, 15, 20,0.4);
+    font-family: sans-serif;
+    background-image:url(../img/Patagonia.jpeg);
+}
+header{
+    height: 15%;
+    text-align: center;
+    font: 1em sans-serif;
+} 
+h1 {
+  font-weight: 700;
+  font-family: sans-serif, Impact, Haettenschweiler, 'Arial Narrow Bold';
+  
+}
+nav{
+    background-color: rgba(5, 0, 0,0.4);
+    height: 45px;
+    line-height: 30px;
+    margin-top: 1em;
+    border-radius: 1em;
+ 
+  }
+  nav ul li {
+    list-style: none;
+  }
+  nav ul li a {
+    float: left; /* pone los elementos */
+    list-style: none;
+    margin: 10px; 
+    text-decoration: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    
+}
+.contenedor {
+    margin: 1em;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 5px solid rgba(0, 0, 0, 0.6);
+    border-radius: 1em;
+  }
+  .container-fluid {
+    align-items: center;
+  }
+input {
+    margin-bottom: 20px;
+    display: block;
+    padding: 10px;
+    margin: 5px 0 30px 0;
+    border-radius: 0.5em;
+  }
+label{
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+.clearfix{
+    clear: both;
+}
+footer{
+    height: 80%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color:white;
+    text-align: center;
+     }
